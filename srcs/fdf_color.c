@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   fdf_color.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: laleta <marvin@42.fr>                      +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/02 19:08:01 by laleta            #+#    #+#             */
-/*   Updated: 2019/05/03 00:57:46 by laleta           ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "fdf.h"
 #include "fdf_color.h"
 
@@ -64,14 +52,17 @@ int		ft_set_gradnt(t_point p, t_point p1, t_point p2, int *delta)
 
 int		ft_color_deep(float ratio, t_fdf *fdf)
 {
-	if (ratio < 0.3)
+	if (ratio < 0.01)
 		return (ft_atoi_base(g_col_tab[fdf->view->clr_nbr],
 				"0123456789abcdef"));
-	else if (ratio < 0.7)
+	else if (ratio < 0.4)
 		return (ft_atoi_base(g_col_tab[fdf->view->clr_nbr + 1],
 				"0123456789abcdef"));
-	else
+	else if (ratio < 0.65)
 		return (ft_atoi_base(g_col_tab[fdf->view->clr_nbr + 2],
+				"0123456789abcdef"));
+	else
+		return (ft_atoi_base(g_col_tab[fdf->view->clr_nbr + 3],
 				"0123456789abcdef"));
 			return (ft_atoi_base(g_col_tab[fdf->view->clr_nbr],
 						"0123456789abcdef"));

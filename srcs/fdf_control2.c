@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   fdf_control2.c                                     :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: laleta <marvin@42.fr>                      +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/03 00:38:10 by laleta            #+#    #+#             */
-/*   Updated: 2019/10/30 22:31:34 by laleta           ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "fdf.h"
 #include "fdf_control.h"
 
@@ -69,19 +57,19 @@ void		ft_rotate(int key, t_fdf *fdf)
 void		ft_zoom(int key, t_fdf *fdf)
 {
 	if (key == KEY_PLUS)
-		fdf->view->zoom++;
+		fdf->view->zoom += 0.2;
 	if (key == KEY_MINUS)
-		fdf->view->zoom--;
-	if (fdf->view->zoom < 1)
-		fdf->view->zoom = 1;
+		fdf->view->zoom -= 0.2;
+	if (fdf->view->zoom < 1.0)
+		fdf->view->zoom = 1.0;
 	ft_fdf_render(fdf, 0, 0);
 }
 
 void		ft_z_deep(int key, t_fdf *fdf)
 {
 	if (key == KEY_Q)
-		fdf->view->z_deep++;
+		fdf->view->z_deep += 0.1;
 	if (key == KEY_A)
-		fdf->view->z_deep--;
+		fdf->view->z_deep -= 0.1;
 	ft_fdf_render(fdf, 0, 0);
 }

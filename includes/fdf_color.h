@@ -1,48 +1,39 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   fdf_color.h                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: laleta <marvin@42.fr>                      +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/02 20:15:46 by laleta            #+#    #+#             */
-/*   Updated: 2019/05/03 02:15:30 by laleta           ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #ifndef FDF_COLOR_H
 # define FDF_COLOR_H
 
 char	*g_col_tab[] =
 {
 	"ffffff",
-	"4050ff",
-	"ff7f",
-	"eeee00",
-	"4169e1",
-	"fffaf0",
-	"c1cdc1",
-	"7d26cd",
-	"ffe4c4",
-	"cd3333",
-	"8a2be2",
-	"ffe4e1",
-	"bebebe",
-	"6495ed",
-	"ffff",
-	"556b2f",
-	"ff7f",
-	"2e8b57",
-	"7b68ee",
-	"4169e1",
+	"ff", // blue
+	"6400", //dark green
+	"7ccd7c", // pale green
+	"ffffff", //white
+	"4169e1", // royal blue
+	"8b5a00",//brown
+	"cd6600", // dark orange
+	"ffa07a", // salmon
+	"fffafa", // snow
+	"7d26cd", // purple
+	"ffe4c4", // bisque
+	"cd3333", // brown
+	"8a2be2", // blue violet
+	"ffe4e1", // mistyrose
+	"bebebe", // gray
+	"6495ed", // cornflower blue
+	"ffff", //cyan
+	"556b2f", // dark olive
+	"ff7f", // spring green
+	"2e8b57", // seagreen
+	"7b68ee", // medium slate
+	"4169e1", // royal blue
 	"87cefa",
 	"48d1cc",
 	"6400",
 	"20b2aa",
 	"7cfc00",
-	"adff2f",
+	"adff2f", //green yellow
 	"f0e68c",
-	"ffff00",
+	"ffff00", //yellow
 	"bc8f8f",
 	"cd5c5c",
 	"a0522d",
@@ -68,9 +59,9 @@ char	*g_col_tab[] =
 	"8b8b",
 	"66cdaa",
 	"ee7600",
-	"cd1076",
-	"7fffd4",
-	"32cd32",
+	"cd1076", //deep pink
+	"7fffd4", //aquamarine
+	"32cd32", //lime green
 	""
 };
 

@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   fdf_initialize.c                                   :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: laleta <marvin@42.fr>                      +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/03 00:59:57 by laleta            #+#    #+#             */
-/*   Updated: 2019/10/30 21:51:55 by laleta           ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "fdf.h"
 
 t_map	*ft_new_map(void)
@@ -34,14 +22,14 @@ t_view	*ft_new_view(t_map *map)
 
 	if (!(view = (t_view*)malloc(sizeof(t_view))))
 		return (NULL);
-	view->zoom = WIDTH / map->width / 2;
+	view->zoom = WIDTH / map->width / 3;
 	view->angl_x = 0;
 	view->angl_y = 0;
 	view->angl_z = 0;
 	view->angl_step = 0.01;
 	view->x_offset = 0;
 	view->y_offset = 0;
-	view->z_deep = 0;
+	view->z_deep = 0.0;
 	view->projection = parallel;
 	view->clr_theme = deflt;
 	view->clr_nbr = 0;

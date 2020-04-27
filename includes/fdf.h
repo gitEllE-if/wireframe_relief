@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   fdf.h                                              :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: laleta <marvin@42.fr>                      +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/30 20:56:49 by laleta            #+#    #+#             */
-/*   Updated: 2019/10/31 01:02:06 by laleta           ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #ifndef FDF_H
 # define FDF_H
 
@@ -77,8 +65,8 @@ typedef struct		s_view
 {
 	int				x_offset;
 	int				y_offset;
-	int				z_deep;
-	int				zoom;
+	float			z_deep;
+	float			zoom;
 	float			angl_x;
 	float			angl_y;
 	float			angl_z;
