@@ -4,5 +4,8 @@
 ![screenshot](screenshot/fdf2.gif)
 
 
+![screenshot](screenshot/fdf3.gif)
+
+
 ![screenshot](screenshot/fdf1.png)
 
