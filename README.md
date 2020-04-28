@@ -25,7 +25,7 @@ some maps may contain a color codes
 You can find examples in the `maps` folder. Use ready maps or create your own using a [map-generator](https://github.com/jgigault/42MapGenerator)
 
 
-![screenshot](screenshot/fdf1.png)
+![screenshot](screenshot/fdf3.gif)
 
 
 There are basics of graphic programming in this project, and in particular how to place points in space, how to join them with segments and how to observe the scene from a particular viewpoint.
@@ -35,8 +35,8 @@ There are basics of graphic programming in this project, and in particular how t
 ## Install
 
 ```
-git clone https://github.com/gitEllE-if/wireframe_relief.git fdf
-cd fdf
+git clone https://github.com/gitEllE-if/wireframe_relief.git mapViewer
+cd mapViewer
 make
 ```
 The program was tested and run on MacOS (Mojave, HighSierra, Catalina)
@@ -61,4 +61,7 @@ example: ./fdf maps/42.fdf
 - `[W S]` - background light/dark
 - `[X]` - z-buffer on/off
 
-![screenshot](screenshot/fdf3.gif)
+![screenshot](screenshot/fdf1.png)
+
+
+![screenshot](screenshot/fdf4.png)
